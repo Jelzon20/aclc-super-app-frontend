@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const SubjectCreate = () => {
-  return (
-    <div>create</div>
-  )
-}
+const SubjectsCreate = () => {
+  return <div>create</div>;
+};
 
-export default SubjectCreate
+export default SubjectsCreate;
