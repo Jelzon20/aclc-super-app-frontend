@@ -26,7 +26,7 @@ const SubjectsList = () => {
       ? []
       : [
           {
-            field: "departmennt",
+            field: "department",
             operator: "eq" as const,
             value: selectedDepartment,
           },
@@ -77,6 +77,7 @@ const SubjectsList = () => {
     refineCoreProps: {
       resource: "subjects",
       pagination: { pageSize: 10, mode: "server" },
+      // enableColumnFilters: true,
       filters: {
         permanent: [...departmentFilters, ...searchFilters],
       },
